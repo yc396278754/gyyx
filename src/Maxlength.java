@@ -30,12 +30,20 @@ public class Maxlength {
         }  
         return maxLength;  
     }  
-    public static void main(String[] args) {  
-        String str="abcabcbb";
-        long start=System.currentTimeMillis();
-        int maxlength=maxLength(str);
-        long end=System.currentTimeMillis();
-        System.out.println("最大不重复子串为:"+maxlength+",运算时间为:"+(end-start)+"毫秒");  
+    public static void main(String[] args) { 
+    	//初次测试
+        String firststr="abcabcbb";
+        long firststart=System.currentTimeMillis();
+        int firstmaxlength=maxLength(firststr);
+        long firstend=System.currentTimeMillis();
+        System.out.println("第一次测试最大不重复子串为:"+firstmaxlength+",运算时间为:"+(firstend-firststart)+"毫秒");
+        //二次测试
+        String secstr="bbbbb";
+        long secstart=System.currentTimeMillis();
+        int secmaxlength=maxLength(secstr);
+        long secend=System.currentTimeMillis();
+        System.out.println("第二次测试最大不重复子串为:"+secmaxlength+",运算时间为:"+(secend-secstart)+"毫秒");
+      
   
     }  
 }
