@@ -49,6 +49,12 @@ public class Maxlength {
         int thirdmaxlength=maxLength(thirdstr);
         long thirdend=System.currentTimeMillis();
         System.out.println("第三次测试最大不重复子串为:"+thirdmaxlength+",运算时间为:"+(thirdend-thirdstart)+"毫秒");  
+      //四次测试
+        String forstr="hjqowjeknadsfdsdgsdfhwdgwert";
+        long forstart=System.currentTimeMillis();
+        int formaxlength=maxLength(forstr);
+        long forend=System.currentTimeMillis();
+        System.out.println("第四次测试最大不重复子串为:"+formaxlength+",运算时间为:"+(forend-forstart)+"毫秒");  
       
   
     }  
